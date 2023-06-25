@@ -5,13 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <title>My Graphic Design Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-ABCDEF1234567890" crossorigin="anonymous" />
+
   <style>
     .carousel-indicators li {
-      border-radius: 10px;
-      width: 20px;
-      height: 10px;
+      width: 1.5em;
+      height: 1.5em;
+      border: none;
+      background: none;
+      font-size: 2em;
+      color: #333;
+    }
+  
+    .carousel-indicators li::before {
+      content: "\2605";
+      display: block;
+      text-align: center;
+      line-height: 1.5em;
+    }
+  
+    .carousel-indicators .active {
+      color: #ffce00;
     }
   </style>
+  
   
 </head>
 <body>
@@ -25,7 +42,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="#">Home</a>
         </li>
-        <li class="nav-item">
+     <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
@@ -55,7 +72,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="projects/IMG_8724.JPG" class="d-block w-100" alt="Project 1">
+            <img src="projects/Screen Shot 2022-07-27 at 2.46.51 PM.png" class="d-block w-100" alt="Project 1">
             <div class="carousel-caption">
               <h5>Project 1</h5>
               <p>Description of project 1.</p>
@@ -69,7 +86,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="projects/IMG_9409.JPG" class="d-block w-100" alt="Project 2">
+            <img src="projects/d028fdb2967afe7ae4ecbde98a78cddf.jpg" class="d-block w-100" alt="Project 2">
             <div class="carousel-caption">
               <h5>Project 3</h5>
               <p>Description of project 2.</p>
